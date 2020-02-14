@@ -1,0 +1,842 @@
+body {
+    background-color: #f7f4ed; /*задает цвет всех страниц*/
+	margin: 0; /* Убираем отступы */
+}
+
+
+p{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+
+h1{
+	  font-family: "Tahoma";
+	  color: #807b77;
+	  -webkit-:font-family: "Tahoma";
+	  -moz-:font-family: "Tahoma";
+	  -ms-:font-family: "Tahoma";
+}
+
+h4{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+  color: #807b77;
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+a{
+	color: rgb(88, 63, 54);
+	text-decoration: none;
+}
+
+
+.site{
+	margin 0 auto;
+
+	
+}
+/*начало верхнего меню*/
+.header {
+	background: #5c2b2a;
+	max-width: 100%;
+	/*max-height: 130px;*/
+	height: auto;
+	position: relative;
+}
+
+.header img{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.ramka{
+width:auto;
+height:auto;
+border: 1px solid #ccc; 
+box-shadow: 0px 5px 15px 1px #a9987f; 
+border-radius: 7px 7px 7px 7px; 
+padding: 8px 5px 8px 5px;
+}
+
+.ramka-video{
+width:auto;
+height:auto;
+border: 1px solid #ccc; 
+box-shadow: 0px 5px 15px 1px #a9987f; 
+border-radius: 7px 7px 7px 7px; 
+padding: 15px 15px 15px 15px;
+}
+
+
+
+.background-header {
+display: flex;
+flex-direction: row;
+background: url(../pix/images/header.jpg) no-repeat;
+background-position: center center;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 71.744%;
+/*margin-left: 11.187%;*/
+height: auto;
+margin:0 auto;
+position: relative;
+
+}
+
+.background-header img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+  z-index:-1;
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+.background-header {
+	width: 100%;
+}
+
+
+  }
+
+
+/*логотип+подложка*/
+.logo {
+	align-self: stretch;
+	position: relative;
+	background-image: url(../pix/images/menu-background.png);
+	width: 26.643%;
+	max-height: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	background-size: cover;
+	
+}
+
+
+.logo img {
+  width: 62.83%;
+  display: inline-block;
+  height: auto;
+  margin:0 auto;
+  z-index:-1;
+
+}
+
+
+/*верхнее меню с ссылками на страницу*/
+.nav {
+	width: 100%;
+	height:auto;
+	max-height: 23,07692307692308%;
+	z-index: 1;
+	align-self: flex-end;
+}
+
+.nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	width: 100%;
+	height:auto;
+
+}
+.nav ul:after {
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 1,0625 rem;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+.nav ul.menu > li > a {
+    display: block;
+	padding: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+@media only screen and (max-width: 1685px) {
+.nav ul.menu > li > a {
+    display: block;
+	padding: 5px;
+    color: white;
+    /*background-color: rgba(255, 255, 255, 0.741);*/
+    text-decoration: none;
+    
+}
+
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 14;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+  }
+  
+  
+  
+  @media only screen and (max-width: 1325px) {
+
+
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 12;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+  }
+  
+  
+  
+    @media only screen and (max-width: 1164px) {
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 10;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+  }
+  
+  
+      @media only screen and (max-width: 1007px) {
+
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 8;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+  }
+    
+
+@media only screen and (max-width: 1007px) {/*настройка меню для мобильных устройств*/
+
+
+.nav ul.menu > li {
+    float: left;
+    position: relative;
+	font: inherit;
+	font-size: 25px;
+    font-family: "Candara";
+	font-variant: small-caps;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+.logo {
+	align-self: stretch;
+	position: relative;
+	background-image: url(../pix/images/menu-background.png);
+	width: 50%;
+	max-height: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	background-size: cover;
+	
+}
+
+p{
+  font-size: 1.5em;
+  font-family: "Tahoma";
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+h1{
+	  font-size: 1.5em;
+	  font-family: "Tahoma";
+	  color: #807b77;
+	  -webkit-:font-family: "Tahoma";
+	  -moz-:font-family: "Tahoma";
+	  -ms-:font-family: "Tahoma";
+}
+
+h4{
+  font-size: 1.5em;
+  font-family: "Tahoma";
+  color: #807b77;
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+a{
+  font-size: 1em;
+  font-family: "Tahoma";
+  color: #807b77;
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+.nav ul.submenu {
+    display: none;/*прячет выпадающее меню*/
+    position: absolute;
+    width: 120px;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.741);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+.nav ul.submenu > li {
+    display: block;
+	font-size: 1rem;
+}
+
+.itemwork p{
+	padding-left: 32.394%;
+	color: rgb(88, 63, 54);
+	font-size: 1rem;
+}
+
+
+.itemproject p{
+	padding-left: 4.35%;
+	color: rgb(88, 63, 54);
+	font-size: 1rem;
+}
+
+.itemproject a{
+	color: rgb(88, 63, 54);
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+  }  
+  
+  
+.nav ul.menu > li > a:hover {
+    background-color: #5c2b2a;
+}
+.nav ul.submenu {
+    display: none;/*прячет выпадающее меню*/
+    position: absolute;
+    width: 120px;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.741);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.nav ul.submenu > li {
+    display: block;
+}
+.nav ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.nav ul.submenu > li > a:hover {/*настройки ссылок выпадающего меню при наведении*/
+
+	background-color: #5c2b2a;
+	color: #fff;
+}
+
+.nav ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+
+
+  
+
+/*1 часть перфорации*/
+.perf {
+	background: url(../pix/images/perf.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	/*width: 15,66617862371889%;*/
+	width: 15.609%;
+	max-width: auto;
+	max-height: 100%;
+	align-self: stretch;
+}
+
+/*2 часть перфорации*/
+.perf2 {
+	background: url(../pix/images/perf.png);
+	background-size: contain;
+	display: inline-block;
+	/*max-width: 214,1689373297003%;*/
+	width: 16.391%;
+	max-width: auto;
+	max-height: 100%;
+	align-self: stretch;
+}
+
+
+.perf2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.perf3 {
+	background: url(../pix/images/perf.png);
+	background-size: contain;
+	display: inline-block;
+	margin-left:18%;
+	/*max-width: 214,1689373297003%;*/
+	width: 24.391%;
+	max-width: auto;
+	max-height: 100%;
+	align-self: stretch;
+}
+
+
+.perf3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*микрофон*/
+.mic {
+background: url(../pix/images/mic.png);
+background-size: cover;
+display: inline-block;
+width: 20.69%;
+max-width:100%;
+border-sizing: border-box;
+height: 16.2%;
+/*max-width: 100%;*/
+/*max-height: 100%;*/
+align-self: stretch;
+margin-left: 17%;
+background-repeat: no-repeat;
+z-index: 9;
+background-attachment: scroll;
+}
+
+/*контент сайта по середине*/
+.content {
+	background: #f7f4ed;
+	max-width: 100%;
+	max-height: 81,08108108108108%;
+	
+}
+
+
+
+/*сюда грузится контент сайта*/
+.container {
+	background: #f7f4ed;
+	max-width: 73,20644216691069%;
+	max-height: 100%;
+	margin: 0 auto;
+	
+}
+
+/*низ сайта*/
+.footer {
+	background: #f7f4ed;
+	width: 100%;
+	max-height: 0,45%;
+	display: block;
+	align-self: flex-end;
+}
+
+.footer p {
+    font-size: 12px;
+    font-family: "Tahoma";
+	-webkit-:font-family: "Tahoma";
+	-moz-:font-family: "Tahoma";
+	-ms-:font-family: "Tahoma";
+    color: rgb(113, 105, 97);
+    line-height: 3.0;
+    text-align: left;
+    margin-left: 3%;
+
+
+}
+
+.footerblock {
+	background: #e0dad1;
+	width: 73%;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:flex-end;
+}
+
+/*Главная*/
+.main {
+	padding-left: 8.418%;
+	padding-right: 8.418%;
+}
+
+.main p{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+
+/*блок со стилями для слайдера*/
+
+
+.cinema {
+background: #e2dbd4;
+background-image:url(../pix/images/cinema/plenka.png);
+background-size: cover;
+/*top: 51px;
+left: 125px;*/
+width: 951px;
+height: 151px;
+margin: 0 auto;
+}
+
+
+.prev{
+background-image:url(../pix/images/cinema/prev.png);	
+width: 17px;
+height: 120px;
+/*left: 0;
+top: 0;*/
+margin-top: 15px;
+display: inline-block;
+position: absolute;
+z-index:99;
+cursor: pointer;
+top: 0%;
+}
+
+.next {
+background-image:url(../pix/images/cinema/next.png);	
+width: 17px;
+height: 120px;
+/*left: 0;
+top: 0;*/
+margin-top: 15px;
+right: 0;
+display: inline-block;
+position: absolute;
+top: 0%;
+z-index:99;
+cursor: pointer;
+}
+
+
+.slider {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.slick-slide {
+    margin: 15px 2px;
+}
+
+.slick-slide img {
+    width: 180px;
+	height: 120px;
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 1;
+
+}
+    
+
+.slick-current {
+    opacity: 1;
+}
+
+.contentserv{
+display: flex;
+flex-direction: column;	
+width: 49,57927083333333%;
+}
+
+.services {
+background: #e2dbd4 none repeat scroll left top;	
+width: 49,57927083333333%;
+height: 134px;
+border-radius: 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+margin-left: 125px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+text-align: center; 
+margin: 0 auto;
+}
+
+.services a{
+text-decoration: none;	
+}
+.services p{
+font-size: 13px;
+font-family: "Tahoma";
+-webkit-:font-family: "Tahoma";
+-moz-:font-family: "Tahoma";
+-ms-:font-family: "Tahoma";
+color: rgb(87, 81, 78);
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;   
+}
+
+
+/*контент на странице Контакты*/
+
+.contacts{
+	padding-left: 8.418%;
+	padding-right: 8.418%;
+	display: flex;
+	
+}
+
+/*О проекте*/
+.oproekte {
+	padding-left: 8.418%;
+	padding-right: 8.418%;
+}
+
+/*
+.oproekte p{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+
+.oproekte h4{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+  -webkit-:font-family: "Tahoma";
+  -moz-:font-family: "Tahoma";
+  -ms-:font-family: "Tahoma";
+}
+
+.oproekte a{
+	color: rgb(88, 63, 54);
+	text-decoration: none;
+}
+*/
+
+.clientscont{
+display: flex;
+flex-direction: column;	
+width: 49,57927083333333%;
+}
+
+.clients {
+background: #e2dbd4 none repeat scroll left top;	
+width: 100%;
+height: auto;
+border-radius: 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+margin-left: 125px;
+display: block;
+flex-direction: row;
+justify-content: flex-start;
+text-align: center; 
+margin: 0 auto;
+margin-bottom:50px;
+padding-bottom:25px;
+}
+
+.clients a{
+text-decoration: none;	
+}
+.clients p{
+font-size: 13px;
+font-family: "Tahoma";
+-webkit-:font-family: "Tahoma";
+-moz-:font-family: "Tahoma";
+-ms-:font-family: "Tahoma";
+color: rgb(87, 81, 78);
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;   
+}
+
+/*Наше Все*/
+.works {
+	padding-left: 8.418%;
+	padding-right: 8.418%;
+}
+/*
+.works p{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+-webkit-:font-family: "Tahoma";
+-moz-:font-family: "Tahoma";
+-ms-:font-family: "Tahoma";
+}
+
+.works a{
+  font-size: 0,875em;
+  font-family: "Tahoma";
+-webkit-:font-family: "Tahoma";
+-moz-:font-family: "Tahoma";
+-ms-:font-family: "Tahoma";
+  color: #594f28;
+}
+
+.works font{
+  font-size: 0,7em;
+  font-family: "Tahoma";
+-webkit-:font-family: "Tahoma";
+-moz-:font-family: "Tahoma";
+-ms-:font-family: "Tahoma";
+}
+*/
+.projects {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.projects2 {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	margin-top: 1.49%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.project-col1 {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.project-col2 {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.752%;
+	
+}
+
+.project-col3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-col4 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.752%;
+}
+
+.itemwork{
+	background-color:#dcd5cd;
+	width:460px;
+	height:107px;
+	
+}
+
+.itemwork p{
+	padding-left: 32.394%;
+	color: rgb(88, 63, 54);
+	font-size: 0.9375em;
+}
+
+.itemwork img{
+	float: left;
+}
+
+
+.itemproject{
+	background-color:#eae5de;
+	width:460px;
+	height:auto;
+	margin-top: 2px;	
+}
+
+.itemproject p{
+	padding-left: 4.35%;
+	color: rgb(88, 63, 54);
+	font-size: 0.75em;
+}
+
+.itemproject a{
+	color: rgb(88, 63, 54);
+	text-decoration: none;
+}
+
+
+
