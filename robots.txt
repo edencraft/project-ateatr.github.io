@@ -1,0 +1,9 @@
+# robots.txt for http://ateatr.pro/ ex http://audiotheater.indeep.ru
+
+User-agent: *
+Disallow: /redirect/
+Disallow: /spekt_01
+Disallow: /spekt_02
+Disallow: /main
+Disallow: /txt/pr/m-princ.htm
+Host: ateatr.pro
